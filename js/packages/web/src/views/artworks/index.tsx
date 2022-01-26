@@ -84,20 +84,21 @@ export const ArtworksView = () => {
       <Content style={{ display: 'flex', flexWrap: 'wrap' }}>
         <Col style={{ width: '100%', marginTop: 10 }}>
           <Row>
+              
             <Tabs
               activeKey={activeKey}
               onTabClick={key => setActiveKey(key as ArtworkViewState)}
               tabBarExtraContent={refreshButton}
             >
               <TabPane
-                tab={<span className="tab-title">All</span>}
+                tab={<span className="tab-title">Toutes</span>}
                 key={ArtworkViewState.Metaplex}
               >
                 {artworkGrid}
               </TabPane>
               {connected && (
                 <TabPane
-                  tab={<span className="tab-title">Owned</span>}
+                  tab={<span className="tab-title">Détenues</span>}
                   key={ArtworkViewState.Owned}
                 >
                   {artworkGrid}
@@ -105,7 +106,7 @@ export const ArtworksView = () => {
               )}
               {connected && (
                 <TabPane
-                  tab={<span className="tab-title">Created</span>}
+                  tab={<span className="tab-title">Créees</span>}
                   key={ArtworkViewState.Created}
                 >
                   {artworkGrid}

@@ -40,7 +40,7 @@ export const ArtView = () => {
     if (art.maxSupply !== undefined) {
       maxSupply = art.maxSupply.toString();
     } else {
-      maxSupply = 'Unlimited';
+      maxSupply = 'Illimité';
     }
   } else if (art.type === ArtType.Print) {
     badge = `${art.edition} of ${art.supply}`;

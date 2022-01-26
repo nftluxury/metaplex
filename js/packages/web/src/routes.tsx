@@ -11,7 +11,9 @@ import {
   AuctionCreateView,
   AuctionView,
   HomeView,
+  FaqView,
   StaticPageView,
+  ExplorerView,
 } from './views';
 import { AdminView } from './views/admin';
 import PackView from './views/pack';
@@ -74,7 +76,9 @@ export function Routes() {
               path="/auction/:id/billing"
               component={() => <BillingView />}
             />
-            <Route path="/about" component={() => <StaticPageView />} />
+            <Route path="/a-propos" component={() => <StaticPageView />} />
+            <Route path="/faq" component={() => <FaqView />} />
+            <Route path="/explore" component={() => <ExplorerView />} />
             <Route path="/" component={() => <HomeView />} />
           </Switch>
         </Providers>

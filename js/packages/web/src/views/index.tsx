@@ -1,4 +1,4 @@
-export { HomeView } from './home';
+export { ExplorerView } from './explorer';
 export { ArtView } from './art';
 export { ArtCreateView } from './artCreate';
 export { ArtistView } from './artist';
@@ -8,3 +8,5 @@ export { AuctionCreateView } from './auctionCreate';
 export { ArtworksView } from './artworks';
 export { AnalyticsView } from './analytics';
 export { StaticPageView } from './staticPage';
+export { HomeView } from './home';
+export { FaqView } from './questions';

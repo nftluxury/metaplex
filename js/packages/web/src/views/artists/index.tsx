@@ -6,6 +6,8 @@ import { ArtistCard } from '../../components/ArtistCard';
 import { useMeta } from '../../contexts';
 
 const { Content } = Layout;
+let nameCo = "-";
+let titleCo = "-";
 
 export const ArtistsView = () => {
   const { whitelistedCreatorsByCreator } = useMeta();
@@ -26,21 +28,42 @@ export const ArtistsView = () => {
     >
       {items.map((m, idx) => {
         const id = m.info.address;
-        return (
-          <Link to={`/artists/${id}`} key={idx}>
-            <ArtistCard
-              key={id}
-              artist={{
-                address: m.info.address,
-                name: m.info.name || '',
-                image: m.info.image || '',
-                link: m.info.twitter || '',
-                background: m.info.background || '',
-              }}
-            />
-          </Link>
-        );
+        const backg = "https://thedarkvr.github.io/shop//banner"+id+".jpeg"
+        const user = "https://thedarkvr.github.io/shop//banner"+id+".jpeg"
+
+if(id == "EKnPP11RAyDw5DHGyvNWq6gq8jrwHCTQvNzaKAGFSfFF"){
+  titleCo = "Sur le départ du soleil";
+  nameCo = "Sur le départ du soleil";
+
+  return (
+         
+    <Link to={`/artists/${id}`} key={idx}>
+      <ArtistCard
+        key={id}
+        artist={{
+          address: m.info.address,
+          name: nameCo || '',
+          image: user || '',
+          link: m.info.twitter || '',
+          background: backg || '',
+        }}
+      />
+    </Link>
+  );
+
+  
+} 
+if(id == "EKnPP11RAyDw5DHGyvNWq6gq8jrwHCTQvNzaKAGFSfFF"){
+  titleCo = "Un coucher ";
+  nameCo = "L'hymne de nos montagnes";
+} 
+     
+
+
+
       })}
+
+
     </Masonry>
   );
 

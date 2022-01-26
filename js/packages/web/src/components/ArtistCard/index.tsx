@@ -7,6 +7,9 @@ import { shortenAddress } from '@oyster/common';
 import { MetaAvatar } from '../MetaAvatar';
 
 export const ArtistCard = ({ artist }: { artist: Artist }) => {
+
+
+
   return (
     <Card
       hoverable={true}
