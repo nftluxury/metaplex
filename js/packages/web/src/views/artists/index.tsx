@@ -8,6 +8,7 @@ import { useMeta } from '../../contexts';
 const { Content } = Layout;
 let nameCo = "-";
 let titleCo = "-";
+let description = "-";
 
 export const ArtistsView = () => {
   const { whitelistedCreatorsByCreator } = useMeta();
@@ -32,8 +33,9 @@ export const ArtistsView = () => {
         const user = "https://thedarkvr.github.io/shop//banner"+id+".jpeg"
 
 if(id == "EKnPP11RAyDw5DHGyvNWq6gq8jrwHCTQvNzaKAGFSfFF"){
-  titleCo = "Sur le départ du soleil";
+  titleCo = "Sur le départ du soleils";
   nameCo = "Sur le départ du soleil";
+  description = "Suddr le départ du soleil";
 
   return (
          
@@ -46,16 +48,18 @@ if(id == "EKnPP11RAyDw5DHGyvNWq6gq8jrwHCTQvNzaKAGFSfFF"){
           image: user || '',
           link: m.info.twitter || '',
           background: backg || '',
+          about: description,
         }}
       />
     </Link>
   );
 
-  
 } 
+
+
 if(id == "EKnPP11RAyDw5DHGyvNWq6gq8jrwHCTQvNzaKAGFSfFF"){
   titleCo = "Un coucher ";
-  nameCo = "L'hymne de nos montagnes";
+  nameCo = "L'hymne de nos montagnes --";
 } 
      
 
