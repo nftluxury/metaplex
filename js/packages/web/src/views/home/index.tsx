@@ -7,26 +7,34 @@ export const HomeView = () => {
     <Layout style={{ margin: 0, alignItems: 'center' }}>
            <h1  style={{color: "white"}}> Pour commencer,  </h1>
 
-      <img src="https://lberthod.github.io/metaplex/banner3.jpeg"></img>
-     <br>
-     </br>
-     <h1  style={{color: "white"}}> Je vous remercie de visiter ma galerie de photos</h1> <br>
-     </br>
-     <img src="https://lberthod.github.io/metaplex/banner4.jpeg"></img> <br>
-     </br>
-     <h1  style={{color: "white"}}> Vous y découvrirez des photos de paysage</h1> <br>
-     </br>
-     <img src="https://lberthod.github.io/metaplex/banner5.jpeg"></img> <br>
-     </br>
-     <h1  style={{color: "white"}}> Vous pouvez acquérir en NFT celles disponibles à la vente  </h1> <br>
-     </br>
+      <img src="https://lberthod.github.io/metaplex/rolex.jpg"></img>
+     <br></br>
 
-     <img src="https://lberthod.github.io/metaplex/banner6.jpeg"></img> <br>
-     </br>
-     <h1  style={{color: "white"}}> Si vous voulez mieux comprendre les NFT et Solana, Cliquez ici </h1>
-     <img src="https://lberthod.github.io/metaplex/banner7.jpeg"></img> <br>
-     </br>
-     <h1  style={{color: "white"}}> Je vous souhaite une belle visite et un agréable moment  </h1>
+<p>The Leading Marketplace for Luxury Watches NFTs
+Behind every collection of images is a real luxury watch</p>
+
+
+All big brands are represented
+Audemars Piguet
+Breitling
+BrÈguet
+Cartier
+Omega
+Patek Philippe
+Piaget
+Rolex
+Tudor
+
+NFT-Luxury Buyer Protection: The Safest Way to Buy, Sell, Finance Your Dream Watch
+
+Purchase or Sale via Crypto
+Authenicity Guaranteed
+Global Money Back Guaranteed
+
+We want to make thousands of customers happy to buy, sell, trade, finance of give a value to their luxury watch.
+
+See our collection of watches
+
 
     </Layout>
   );
