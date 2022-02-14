@@ -7,7 +7,7 @@ export const HomeView = () => {
     <Layout style={{ margin: 0, alignItems: 'center' }}>
            <h1  style={{color: "white"}}> Pour commencer,  </h1>
 
-      <img src="https://lberthod.github.io/metaplex/rolex.jpg"></img>
+      <img src="https://thedarkvr.github.io/shop/rolex.jpg"></img>
      <br></br>
 
 <p>The Leading Marketplace for Luxury Watches NFTs
